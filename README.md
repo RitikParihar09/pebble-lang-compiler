@@ -1,4 +1,4 @@
-cat > README.md << 'EOF'
+
 # Pebble Language Compiler
 
 A custom compiler for the **Pebble Programming Language**, built using **Flex** and **Bison**. Pebble is a C-like language designed for simplicity and ease of understanding. This project translates `.peb` source files into C code, compiles the output, and executes it.
@@ -77,4 +77,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Ritik Parihar**  
 [GitHub: @RitikParihar09](https://github.com/RitikParihar09)
-EOF
+
