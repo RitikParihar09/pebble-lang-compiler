@@ -1,0 +1,13 @@
+function add(x, y) {
+    display(x + y)
+}
+
+// first number 
+ask "Enter first number: " and save as num1_str
+var num1 = to_int(num1_str)
+
+# second number
+var num2_str = input("Enter second number: ")
+var num2 = to_int(num2_str)
+
+add(num1, num2)

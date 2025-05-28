@@ -1,0 +1,2 @@
+// Test: Invalid input syntax (number instead of string)
+ask 123 and save as name

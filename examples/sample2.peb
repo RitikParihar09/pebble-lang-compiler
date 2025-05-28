@@ -1,0 +1,11 @@
+var x = 6;
+var y = "hello";
+var z = 3.14;
+var c = 'a';
+
+if (x > 5) {
+    display(x);
+    display(y);
+    display(z);
+    display(c);
+}

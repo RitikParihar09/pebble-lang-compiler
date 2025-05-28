@@ -1,0 +1,38 @@
+// Test: Complex for loop examples
+// This test demonstrates various for loop use cases
+
+// Basic for loop
+display("Basic for loop:")
+for(var i=0; i<5; i=i+1) {
+    display(i)
+}
+
+// For loop with different increment
+display("\nFor loop with increment by 2:")
+for(var j=0; j<10; j=j+2) {
+    display(j)
+}
+
+// For loop with decrement
+display("\nFor loop with decrement:")
+for(var k=5; k>0; k=k-1) {
+    display(k)
+}
+
+// Nested for loops
+display("\nNested for loops:")
+for(var a=1; a<=3; a=a+1) {
+    for(var b=1; b<=3; b=b+1) {
+        display("a=" + a + ", b=" + b)
+    }
+}
+
+// For loop in a function
+function print_numbers(start, end) {
+    display("\nNumbers from " + start + " to " + end + ":")
+    for(var num=start; num<=end; num=num+1) {
+        display(num)
+    }
+}
+
+print_numbers(1, 5)

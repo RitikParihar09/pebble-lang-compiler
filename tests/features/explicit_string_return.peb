@@ -1,0 +1,12 @@
+// Test: Explicit string return function
+// This test verifies that string return functions work correctly
+
+// Function that returns a string
+function get_greeting() {
+    var greeting = "Hello, World!"
+    return greeting
+}
+
+// Test the function
+var message = get_greeting()
+display(message)

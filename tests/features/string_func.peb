@@ -1,0 +1,10 @@
+// Test: String function
+// This test demonstrates a function that returns a string
+
+// Function that returns a string
+function get_message() {
+    return "Hello, World!"
+}
+
+// Call the function directly
+display(get_message())

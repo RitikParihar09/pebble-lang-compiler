@@ -1,0 +1,11 @@
+// Test: User input functionality
+// This test requires manual input, so it's meant for interactive testing
+
+// Method 1: ask and save
+ask "Enter your name: " and save as name
+display("Hello, " + name)
+
+// Method 2: input function
+var age_str = input("Enter your age: ")
+var age = to_int(age_str)
+display("In 10 years, you will be " + (age + 10))

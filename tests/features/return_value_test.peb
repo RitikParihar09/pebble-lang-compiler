@@ -1,0 +1,19 @@
+// Test: Function return values
+// This test demonstrates functions that return values of different types
+
+// Function that returns an integer
+function get_int() {
+    return 42
+}
+
+// Function that returns a string
+function get_string() {
+    return "Hello"
+}
+
+// Test the functions
+var i = get_int()
+display(i)
+
+var s = get_string()
+display(s)

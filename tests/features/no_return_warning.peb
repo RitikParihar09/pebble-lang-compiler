@@ -1,0 +1,12 @@
+// Test: Function with no explicit return statement
+// This test verifies that functions without return statements don't generate warnings
+
+// Function with no return statement
+function test_func() {
+    display("This function has no explicit return")
+}
+
+// Call the function and store the result
+var result = test_func()
+display("Function returned:")
+display(result)  // Should display 0 (default return value)

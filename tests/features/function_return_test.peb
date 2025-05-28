@@ -1,0 +1,56 @@
+// Test: Function return values
+// This test demonstrates functions that return values of different types
+
+// Function that returns an integer
+function add(a, b) {
+    return a + b
+}
+
+// Function that returns a string
+function greet(name) {
+    var greeting = "Hello, "
+    var full_greeting = greeting + name
+    return full_greeting
+}
+
+// Function that returns a float
+function calculate_area(radius) {
+    var pi = 3.14159
+    var r_squared = radius * radius
+    return pi * r_squared
+}
+
+// Function that returns a boolean
+function is_adult(age) {
+    return age >= 18
+}
+
+// Test integer return
+var sum = add(5, 10)
+display("Sum:")
+display(sum)
+
+// Test string return
+var greeting = greet("World")
+display("Greeting:")
+display(greeting)
+
+// Test float return
+var area = calculate_area(5)
+display("Area:")
+display(area)
+
+// Test boolean return
+var adult = is_adult(20)
+display("Is adult:")
+display(adult)
+
+// Test nested function calls
+var nested_result = add(add(1, 2), add(3, 4))
+display("Nested result:")
+display(nested_result)
+
+// Test function call in expression
+var expression_result = add(5, 10) * 2
+display("Expression result:")
+display(expression_result)

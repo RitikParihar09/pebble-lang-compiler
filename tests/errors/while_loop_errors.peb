@@ -1,0 +1,12 @@
+// Test: While loop error handling
+// This test demonstrates error handling for while loops
+
+// Error 1: Using a non-boolean condition
+while ("not a boolean") {
+    display("This should cause an error")
+}
+
+// Error 2: Using an undefined variable in the condition
+while (undefined_var < 10) {
+    display("This should cause an error")
+}

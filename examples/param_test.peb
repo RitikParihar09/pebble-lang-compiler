@@ -1,0 +1,4 @@
+function test(x){
+    display(x);
+}
+test(5);

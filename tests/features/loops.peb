@@ -1,0 +1,31 @@
+// Test: Loops
+// This test demonstrates both for and while loops
+
+// For loop
+display("For loop counting from 0 to 4:")
+var i = 0
+for (i < 5) {
+    display(i)
+    i = i + 1
+}
+
+// While loop
+display("\nWhile loop counting from 5 to 9:")
+var j = 5
+while (j < 10) {
+    display(j)
+    j = j + 1
+}
+
+// Nested loops
+display("\nNested loops:")
+var row = 1
+while (row <= 3) {
+    display(row)
+    var col = 1
+    for (col <= 3) {
+        display(col)
+        col = col + 1
+    }
+    row = row + 1
+}

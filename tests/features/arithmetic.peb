@@ -1,0 +1,23 @@
+// Test: Basic arithmetic operations
+var a = 10
+var b = 5
+
+// Addition
+var sum = a + b
+display("Sum: " + sum)
+
+// Subtraction
+var diff = a - b
+display("Difference: " + diff)
+
+// Multiplication
+var product = a * b
+display("Product: " + product)
+
+// Division
+var quotient = a / b
+display("Quotient: " + quotient)
+
+// Exponentiation
+var power = a ^ 2
+display("Power: " + power)

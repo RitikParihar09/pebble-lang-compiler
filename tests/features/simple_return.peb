@@ -1,0 +1,10 @@
+// Simple function return test
+
+// Function that returns an integer
+function add(a, b) {
+    return a + b
+}
+
+// Test the function
+var result = add(5, 10)
+display(result)

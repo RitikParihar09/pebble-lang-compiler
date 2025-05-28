@@ -1,0 +1,34 @@
+// Example with both for and while loops
+
+// For loop
+display("For loop:")
+for(var i=0; i<5; i=i+1){
+    display(i)
+}
+
+// While loop
+display("\nWhile loop:")
+var j = 0
+while (j < 5) {
+    display(j)
+    j = j + 1
+}
+
+// Function with both loops
+function test_both(n) {
+    display("\nFunction with both loops:")
+
+    display("For loop in function:")
+    for(var k=0; k<n; k=k+1){
+        display(k)
+    }
+
+    display("While loop in function:")
+    var m = 0
+    while (m < n) {
+        display(m)
+        m = m + 1
+    }
+}
+
+test_both(3);

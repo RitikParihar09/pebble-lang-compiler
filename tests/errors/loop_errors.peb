@@ -1,0 +1,17 @@
+// Test: Loop error handling
+// This test demonstrates error handling for loops
+
+// Error 1: Using a non-boolean condition in for loop
+for ("not a boolean") {
+    display("This should cause an error")
+}
+
+// Error 2: Using a non-boolean condition in while loop
+while ("not a boolean") {
+    display("This should cause an error")
+}
+
+// Error 3: Using an undefined variable in a loop condition
+for (undefined_var < 10) {
+    display("This should cause an error")
+}

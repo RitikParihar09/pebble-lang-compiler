@@ -1,0 +1,112 @@
+// PEBBLE LANGUAGE REFERENCE
+
+// COMMENTS
+// This is a single-line comment
+# This is also a single-line comment
+
+// DATA TYPES
+var int_var = 42
+var float_var = 3.14
+var string_var = "Hello, World!"
+var char_var = 'A'
+var bool_var_true = true
+var bool_var_false = false
+const PI = 3.14159
+
+// OPERATORS
+var a = 10
+var b = 3
+display(a + b)  // Addition
+display(a - b)  // Subtraction
+display(a * b)  // Multiplication
+display(a / b)  // Division
+display(a ** b) // Exponentiation
+
+// COMPARISON
+display(a == b)  // Equal
+display(a != b)  // Not Equal
+display(a > b)   // Greater Than
+display(a < b)   // Less Than
+display(a >= b)  // Greater or Equal
+display(a <= b)  // Less or Equal
+
+// ALTERNATIVE COMPARISON
+display(a equal b)           // Equal
+display(a not equal b)       // Not Equal
+display(a greater b)         // Greater Than
+display(a smaller b)         // Less Than
+display(a greater equal b)   // Greater or Equal
+display(a smaller equal b)   // Less or Equal
+
+// STRING CONCATENATION
+var first_name = "John"
+var last_name = "Doe"
+var full_name = first_name + " " + last_name
+display(full_name)
+
+// IF-ELSE STATEMENT
+var x = 10
+if (x > 5) {
+    display("x is greater than 5")
+} else if (x == 5) {
+    display("x is equal to 5")
+} else {
+    display("x is less than 5")
+}
+
+// REPEAT LOOP
+repeat(3) {
+    display("Repeat loop")
+}
+
+// FUNCTIONS
+function add_numbers(x, y){
+    return x + y
+}
+
+function get_greeting(){
+    return "Hello"
+}
+
+// FUNCTION CALLS
+display(add_numbers(5, 3))
+display(get_greeting())
+
+// DISPLAY AND PRINT
+display("Display with newline")
+print("Print without ")
+print("newline")
+display("")
+
+// TYPE CONVERSION
+var num_str = "42"
+var num_int = to_int(num_str)
+display(num_int)
+
+var bool_str = "true"
+var bool_val = to_bool(bool_str)
+display(bool_val)
+
+var float_str = "3.14"
+var float_val = to_float(float_str)
+display(float_val)
+
+var char_str = "A"
+var char_val = to_char(char_str)
+display(char_val)
+
+// NESTED CONDITIONALS
+var score = 85
+if (score >= 60) {
+    if (score >= 90) {
+        display("Grade: A")
+    } else if (score >= 80) {
+        display("Grade: B")
+    } else if (score >= 70) {
+        display("Grade: C")
+    } else {
+        display("Grade: D")
+    }
+} else {
+    display("Grade: F")
+}

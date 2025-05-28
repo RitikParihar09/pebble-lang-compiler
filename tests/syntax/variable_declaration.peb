@@ -1,0 +1,26 @@
+// Test: Variable declaration syntax
+// Testing different ways to declare variables
+
+// Integer
+var num = 42
+display(num)
+
+// Float
+var pi = 3.14159
+display(pi)
+
+// String
+var greeting = "Hello, World!"
+display(greeting)
+
+// Boolean
+var is_active = true
+display(is_active)
+
+// Character
+var letter = 'A'
+display(letter)
+
+// Constants
+const gravity = 9.8
+display(gravity)

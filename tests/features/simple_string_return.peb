@@ -1,0 +1,7 @@
+// Test string return
+function get_greeting() {
+    return "Hello"
+}
+
+var greeting = get_greeting()
+display(greeting)

@@ -1,0 +1,45 @@
+// Test: Simple calculator
+// This test combines functions, input, and arithmetic
+
+function add(a, b) {
+    return a + b
+}
+
+function subtract(a, b) {
+    return a - b
+}
+
+function multiply(a, b) {
+    return a * b
+}
+
+function divide(a, b) {
+    if (b == 0) {
+        display("Error: Division by zero")
+        return 0
+    }
+    return a / b
+}
+
+// Get first number
+var num1_str = input("Enter first number: ")
+var num1 = to_int(num1_str)
+
+// Get second number
+var num2_str = input("Enter second number: ")
+var num2 = to_int(num2_str)
+
+// Get operation
+var operation = input("Enter operation (+, -, *, /): ")
+
+// Perform calculation
+if (operation == "+") {
+    display(add(num1, num2))
+} else if (operation == "-") {
+    display(subtract(num1, num2))
+} else if (operation == "*") {
+    display(multiply(num1, num2))
+} else if (operation == "/") {
+    display(divide(num1, num2))
+} else {
+    display("Invalid operation")

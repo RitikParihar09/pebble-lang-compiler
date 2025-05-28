@@ -1,0 +1,26 @@
+// Test program with multiple function parameters
+var a = 5;
+var b = 10;
+var c = 15;
+
+// Function with two parameters
+function add(x, y) {
+    display(x + y);
+}
+
+// Function with three parameters
+function calculate(x, y, z) {
+    display(x + y * z);
+}
+
+// Function with four parameters
+function complex(a, b, c, d) {
+    display(a + b);
+    display(c * d);
+    display((a + b) * (c + d));
+}
+
+// Call the functions with different arguments
+add(a, b);
+calculate(a, b, c);
+complex(a, b, c, a + b);

@@ -1,0 +1,2 @@
+// Test: Missing quotes in string
+display(Hello world)

@@ -1,0 +1,39 @@
+// Test: Function return types
+// Testing different return types
+
+// Integer return
+function get_int() {
+    return 42
+}
+
+// String return
+function get_string() {
+    return "Hello"
+}
+
+// Float return
+function get_float() {
+    return 3.14
+}
+
+// Boolean return
+function get_bool() {
+    return true
+}
+
+// Test the functions
+var i = get_int()
+display("Integer:")
+display(i)
+
+var s = get_string()
+display("String:")
+display(s)
+
+var f = get_float()
+display("Float:")
+display(f)
+
+var b = get_bool()
+display("Boolean:")
+display(b)

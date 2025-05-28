@@ -1,0 +1,21 @@
+// Test: String return function
+// This test verifies that string return functions work correctly
+
+// Function that returns a string
+function get_greeting() {
+    return "Hello, World!"
+}
+
+// Function with no explicit return (should return empty string by default)
+function get_empty_string() {
+    display("This function has no explicit return but should return an empty string")
+}
+
+// Test the functions
+var greeting = get_greeting()
+display("Greeting function returned:")
+display(greeting)
+
+var empty = get_empty_string()
+display("Empty string function returned:")
+display(empty)

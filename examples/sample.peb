@@ -1,0 +1,29 @@
+ask "Enter a number" and save as num;
+var n = to_int(num);
+
+repeat(n){
+    display("Hello");
+}
+
+
+
+function fn(){
+    var a = 10;
+    display(a);
+}
+
+fn();
+
+var a=5
+var b=3.4
+var c="hello"
+var d='a'
+var e=true
+display(a)
+display(b)
+display(c)
+display(d)
+display(e)
+ 
+// comment
+# comment 

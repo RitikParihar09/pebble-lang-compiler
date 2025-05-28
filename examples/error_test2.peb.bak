@@ -1,0 +1,59 @@
+// Test file to demonstrate more error handling in Pebble
+
+// Each error is separated by a line of dashes to isolate them
+// This helps the parser focus on one error at a time
+
+// Test 1: Invalid input syntax (number instead of string)
+ask "123" and save as name
+
+// ----------
+
+// Test 2: Missing quotes in string
+display("Hello world")
+
+// ----------
+
+// Test 3: Invalid comparison (= instead of ==)
+if (5!=6) {
+    display("Equal")
+}
+
+// ----------
+
+// Test 4: Invalid function parameter types
+function add(a, b) {
+    display(a + b)
+}
+add("hello", 5)
+
+// ----------
+
+// Test 5: Invalid operator (% is not supported)
+var x = 10 % 3
+
+// ----------
+
+// Test 6: Missing operator
+var y = 5 10
+
+// ----------
+
+// Test 7: Invalid variable name (starts with number)
+var 123abc = 10
+
+// ----------
+
+// Test 8: Invalid character
+var z = @
+
+// ----------
+
+// Test 9: Invalid function call (missing argument)
+display()
+
+// ----------
+
+// Test 10: Invalid repeat count (string instead of number)
+repeat("hello") {
+    display("Hello")
+}

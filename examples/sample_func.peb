@@ -1,0 +1,14 @@
+// This is a sample file that uses a function
+// But we'll define the function in a way that doesn't use parameters
+// to avoid the UndefinedVariableError
+
+function test() {
+    var x = 15;
+    display(x);
+}
+
+var a = 5;
+var b = 10;
+test();
+display(a);
+display(b);

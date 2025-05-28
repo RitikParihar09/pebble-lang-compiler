@@ -1,0 +1,10 @@
+// Test: For loop in a function
+// This test demonstrates a for loop with the traditional C-style syntax
+
+function fun(x) {
+    for(var i=0; i<x; i=i+1) {
+        display(i)
+    }
+}
+
+fun(5)

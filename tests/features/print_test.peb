@@ -1,0 +1,38 @@
+// Test: print vs display functionality
+// This test demonstrates the difference between print() and display()
+
+// Integer tests
+var num = 42
+print("Integer with print(): ")
+print(num)
+display("Integer with display(): ")
+display(num)
+
+// String tests
+var str = "Hello, World!"
+print("String with print(): ")
+print(str)
+display("String with display(): ")
+display(str)
+
+// Float tests
+var pi = 3.14159
+print("Float with print(): ")
+print(pi)
+display("Float with display(): ")
+display(pi)
+
+// Character tests
+var letter = 'A'
+print("Character with print(): ")
+print(letter)
+display("Character with display(): ")
+display(letter)
+
+// Multiple prints on one line
+print("Multiple ")
+print("prints ")
+print("on ")
+print("one ")
+print("line")
+display("")  // Just to add a newline at the end

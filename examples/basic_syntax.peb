@@ -1,0 +1,28 @@
+// Basic Pebble syntax
+
+// Variables
+var a = 10
+var b = 20
+var c = a + b
+display(c)
+
+// If statement
+if (a < b) {
+    display("a is less than b")
+}
+
+// Function
+function add(x, y){
+    return x + y
+}
+
+// Function call
+var result = add(5, 3)
+display(result)
+
+// Repeat loop
+repeat(3) {
+    display("Repeat")
+}
+
+// End of file

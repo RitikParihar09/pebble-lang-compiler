@@ -1,0 +1,15 @@
+// For and while loops outside a function
+
+// For loop
+display("For loop:")
+for(var i=0; i<3; i=i+1) {
+    display(i)
+}
+
+// While loop
+display("\nWhile loop:")
+var j = 0
+while (j < 3) {
+    display(j)
+    j = j + 1
+}

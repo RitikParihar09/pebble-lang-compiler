@@ -1,0 +1,40 @@
+// Test default return values for different function types
+
+// Function that returns an integer (default)
+function int_func() {
+    display("This function returns an int by default")
+}
+
+// Function that returns a string
+function string_func() {
+    display("This function should return a string")
+    return "Hello"
+}
+
+// Function that returns a float
+function float_func() {
+    display("This function returns a float")
+    return 3.14
+}
+
+// Function with no explicit return but used in an expression
+function no_return_func() {
+    display("This function has no explicit return")
+}
+
+// Test the functions
+var i = int_func()
+display("Integer function returned: ")
+display(i)
+
+var s = string_func()
+display("String function returned: ")
+display(s)
+
+var f = float_func()
+display("Float function returned: ")
+display(f)
+
+var n = no_return_func()
+display("No return function returned: ")
+display(n)

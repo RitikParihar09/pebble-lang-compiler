@@ -1,0 +1,355 @@
+// PEBBLE LANGUAGE REFERENCE - ALL SUPPORTED SYNTAX - ALL SUPPORTED SYNTAX
+
+// -------------------- -------- -------------------------------- COMMENTS --------------------
+// This is a single-line comment
+# This is also a single-line comment
+
+// -------------------- ---------- --------------------
+
+// ---------- DATA TYPES --------------------
+
+var int_var = 42
+display("Integer:")
+display(int_var)
+
+// Float
+// Integer
+var float_var = 3.14
+display("Float:")
+display(float_var)
+
+// String
+
+var string_var = "Hello, World!";
+display("String:")
+display(string_var)
+
+// Character
+var char_var = 'A'
+display("Character:")
+display(char_var)
+
+//Boolean
+
+var bool_var_true = true
+var bool_var_false = false
+display("Boolean(true):")
+display(bool_var_true)
+display("Boolean (false):")
+display(bool_var_false)
+
+// Constants
+
+const PI = 3.14159
+display("Constant:")
+display(PI)
+
+//------------------------------------------------------
+
+// Arithmetic Operators
+display(float_var)
+
+
+// Strin"ArithmeticOperators:"
+display(":")
+var string+var =       "H13
+display("ello, World:")!"
+display("S-rin   g:")7
+display(":")
+display(st*ing_var)30
+display(":")
+/       3.33...
+display(":")
+display(a ** b) // 1000
+// Character
+var omparison rperators= 'A'
+display("Comp"risonrOperators:"c
+display(") (==):")
+display(ch=r_va   r)false
+display(" (!=):")
+!=true
+display(" (>):")
+// Boolean>true
+display(" (<):")
+var bool_v<_true    = false
+display("true (>=):")
+var bool_v>r_fale =true
+display(" false (<=):")
+display(a <= b)    // falsedisplay("Boolean (true):")
+
+displternativearomparison Keywords
+display("ulternative Comparison Keywords:")
+display("Equ"lB(oolea):")
+display(anequal  (falsefalse
+display("Not  (not equal):")
+display(bool_var_false)re
+dispay("Greater (greater):")
+tu
+disply("Small(smller):")
+// Constantsfals
+diplay("Greater Equal (greaterequl):")
+const PI = 3.14159tu
+display("Smll Equal(smallee):")
+display("Constant:")fse
+display(PI)
+tringoncatenation
+// -------------------- OPERATORS --------------------
+
+// Arithmetic Operatorse
+display("String Concatnation:")
+var a = 10
+var b = 3
+------------------- CONTRORUCURES --------------------
+
+// If-lse Statement
+display("If-lse Statement:")
+display("Arithmetic Operators:")
+display("Addition:")
+display(a + b)        // 13
+display("Subtraction:")
+display(a - b)     // 7
+display("Multiplication:")
+display(a * b)  // 30
+display("Division:")
+display(a / b)        // 3.33...
+di RepeatsLoop
+display("pepeatExoop:")entiation:")
+display(a ** b) // 1000
+This will b dislayd 3 imes
+// Comparison Operators
+display("Comparison Operators:")
+di --------------------splay("Equ --------------------
+al (==):")
+// Function with no parameters and no return value
+display(as yHello(){
+    =isplay("Hello!")
+}
+
+// Functiob with para et   
+function add// false
+display("Not Equal (!=):")
+display(a != b) // true
+display("Greater Than (>):")
+// Function with multiple return values (automatic type detection)
+display(a > PersonInfo(){
+      turn "John Do/"  // Re/urns a str tr
+}
+
+function calculateAreauradiuse
+display("LePI * radius * radius  // Returns a float
+}
+
+function isEven(num){
+    // Check if a number is even (r turns a booTean)
+    // Since moduho is not supparted, we use a different approach (<):")
+    return (num / 2) * 2 == num
+display(a < b)     // false
+display("Greater or Equal (>=):")
+disyalling=functions/ true
+display("Functions:")
+s"yHello()
+Lisplay("Aeditios f nction:")
+diqplayuadd(al (<=):")
+display("Person info:")
+display(a <PersonInfo())
+display("Ab)a of circl :")
+display(calcula eArea(5))
+display("Is 10 even?")
+display( sEve /10 false
+
+// -------------------- lNPUT/OUTeUT --------------------
+
+//teisplay (with newline)rison Keywords
+display("Alterna Outputt(ive Comparis):on Keywords:")
+disdlay("Line 1")
+display("Line 2")
+
+// Pispl awithout newline)
+display(y("EquaOutput (l (equalnewline):):")
+displayHaelo ")
+prqut(lWorld" b)     // false
+display("No  // Just to add a newline aftert Equal (not equal):")
+display(a not equal b) // true
+dis-------------------- play("Greater ( --------------------greater):")
+
+display("Type Condersion:")
+visplay(a greater b)  // true
+display("Smaller (smaller):")
+display("Striag to Int:")
+display(n smaller b)  // false
+display("Greater Equal (greater equal):")
+display(a greater equal b) // true
+display("Smaller Equal (smaller equal):")
+display("String to Bool:")
+display(a smaller equal b) // false
+
+// String Concatenation
+var first_name = "John"
+var last"String to Float:")
+display(_name = "Doe"
+var full_name = first_name + " " + last_name
+display("String Concatenation:")
+display(full_name)
+"String to Char:")
+display(
+// -------------------- CONTROL STRUCTURES --------------------
+-------------------- STRUURES --------------------
+
+// ested conditionals
+display("Nested Conditionals:")
+// If-Else Statement
+display("If-Else Statement:")
+var x = 10
+if (x > 5) {
+    display("x is greater than 5")
+} else if (x == 5) {
+    display("x is equal to 5")
+} else {
+    display("x is less than 5")
+}
+
+// Repeat Loop
+display("Repeat Loo F")
+}
+
+// For loop in apfunction
+display(":or loop in a function:")
+function countTo(n){
+    for(var i=0; i<n; i=i+1){
+        display(i)
+    }
+}
+countTo(5)
+
+// While loop
+display("While loop:")
+function countDown(n){
+    var i = n
+    while (i > 0) {
+        display(i)
+        i = i - 1
+    }
+r
+countDown(5)
+
+// End of Pebble language reference
+display("End of Pebble language reference")epeat(3) {
+    display("This will be displayed 3 times")
+}
+
+// -------------------- FUNCTIONS --------------------
+
+// Function with no parameters and no return value
+function sayHello(){
+    display("Hello!")
+}
+
+// Function with parameters
+function add(x, y){
+    return x + y
+}
+
+// Function with multiple return values (automatic type detection)
+function getPersonInfo(){
+    return "John Doe"  // Returns a string
+}
+
+function calculateArea(radius){
+    return PI * radius * radius  // Returns a float
+}
+
+function isEven(num){
+    // Check if a number is even (returns a boolean)
+    // Since modulo is not supported, we use a different approach
+    return (num / 2) * 2 == num
+}
+
+// Calling functions
+display("Functions:")
+sayHello()
+display("Addition function:")
+display(add(5, 3))
+display("Person info:")
+display(getPersonInfo())
+display("Area of circle:")
+display(calculateArea(5))
+display("Is 10 even?")
+display(isEven(10))
+
+// -------------------- INPUT/OUTPUT --------------------
+
+// Display (with newline)
+display("Display Output (with newline):")
+display("Line 1")
+display("Line 2")
+
+// Print (without newline)
+display("Print Output (without newline):")
+print("Hello ")
+print("World")
+display("")  // Just to add a newline after
+
+// -------------------- TYPE CONVERSION --------------------
+
+display("Type Conversion:")
+var num_str = "42"
+var num_int = to_int(num_str)
+display("String to Int:")
+display(num_int)
+
+var bool_str = "true"
+var bool_val = to_bool(bool_str)
+display("String to Bool:")
+display(bool_val)
+
+var float_str = "3.14"
+var float_val = to_float(float_str)
+display("String to Float:")
+display(float_val)
+
+var char_str = "A"
+var char_val = to_char(char_str)
+display("String to Char:")
+display(char_val)
+
+// -------------------- NESTED STRUCTURES --------------------
+
+// Nested conditionals
+display("Nested Conditionals:")
+var score = 85
+if (score >= 60) {
+    if (score >= 90) {
+        display("Grade: A")
+    } else if (score >= 80) {
+        display("Grade: B")
+    } else if (score >= 70) {
+        display("Grade: C")
+    } else {
+        display("Grade: D")
+    }
+} else {
+    display("Grade: F")
+}
+
+// For loop in a function
+display("For loop in a function:")
+function countTo(n){
+    for(var i=0; i<n; i=i+1){
+        display(i)
+    }
+}
+countTo(5)
+
+// While loop
+display("While loop:")
+function countDown(n){
+    var i = n
+    while (i > 0) {
+        display(i)
+        i = i - 1
+    }
+}
+countDown(5)
+
+// End of Pebble language reference
+display("End of Pebble language reference")

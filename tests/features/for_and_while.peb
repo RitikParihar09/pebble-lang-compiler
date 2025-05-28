@@ -1,0 +1,37 @@
+// Test: For and while loops together
+// This test demonstrates using both for and while loops
+
+// For loop
+display("For loop:")
+for(var i=0; i<3; i=i+1) {
+    display(i)
+}
+
+// While loop
+display("\nWhile loop:")
+var j = 0
+while (j < 3) {
+    display(j)
+    j = j + 1
+}
+
+// Function with both loops
+function test_loops(n) {
+    display("\nFunction with both loops:")
+    
+    // For loop inside function
+    display("For loop inside function:")
+    for(var k=0; k<n; k=k+1) {
+        display(k)
+    }
+    
+    // While loop inside function
+    display("While loop inside function:")
+    var m = 0
+    while (m < n) {
+        display(m)
+        m = m + 1
+    }
+}
+
+test_loops(3)

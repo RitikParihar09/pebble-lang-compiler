@@ -1,0 +1,18 @@
+// Test file for function parameter type checking
+
+// Define a function that adds two numbers
+function add(a, b) {
+    display(a + b)
+}
+
+// Call the function with a string and a number (should generate an error)
+add("hello", 5)
+
+// Call the function with two numbers (should work)
+add(10, 20)
+
+// Call the function with two strings (should work for string concatenation)
+add("hello ", "world")
+
+// Call the function with mismatched types (should generate an error)
+add(10, "world")

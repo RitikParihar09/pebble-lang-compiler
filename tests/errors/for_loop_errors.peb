@@ -1,0 +1,18 @@
+// Test: For loop error handling
+// This test demonstrates error handling for for loops
+
+// Error 1: Using a non-boolean condition
+for (var i = 0; "not a boolean"; i = i + 1) {
+    display(i)
+}
+
+// Error 2: Mismatched variables in initialization and increment
+for (var j = 0; j < 10; k = k + 1) {
+    display(j)
+}
+
+// Error 3: Redeclaring an existing variable
+var x = 5
+for (var x = 0; x < 10; x = x + 1) {
+    display(x)
+}

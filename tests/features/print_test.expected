@@ -1,0 +1,13 @@
+Integer with print(): 42
+Integer with display(): 
+42
+String with print(): Hello, World!
+String with display(): 
+Hello, World!
+Float with print(): 3.14
+Float with display(): 
+3.14
+Character with print(): A
+Character with display(): 
+A
+Multiple prints on one line

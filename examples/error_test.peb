@@ -1,0 +1,33 @@
+// Test file to demonstrate error handling in Pebble
+
+// Undeclared variable
+x = 10
+
+// Type mismatch
+var y = 5
+y = "hello"
+
+// Redeclaration
+var z = 10
+var z = 20
+
+// Invalid operation
+var a = 5 + "hello"
+
+// Missing closing parenthesis
+display("Hello world"
+
+// Invalid input prompt
+var name = input(123)
+
+// Undefined function
+calculate(10, 20)
+
+// Invalid syntax
+if x > 5 {
+    display("x is greater than 5")
+}
+
+// Missing braces
+if (x > 5)
+    display("x is greater than 5")

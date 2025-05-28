@@ -1,0 +1,10 @@
+// Test: Simple C-style for loop
+// This test demonstrates a basic for loop with the traditional C-style syntax
+
+function count_to(n) {
+    for(var i=0; i<n; i=i+1) {
+        display(i)
+    }
+}
+
+count_to(5)

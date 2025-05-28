@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Directories
+BIN_DIR="bin"
+BUILD_DIR="build"
+SRC_DIR="src"
+EXAMPLES_DIR="examples"
+
+# Check for required tools
+command -v bison >/dev/null 2>&1 || { echo "Error: bison is not installed. Install it with 'brew install bison' on macOS."; exit 1; }
+command -v flex >/dev/null 2>&1 || { echo "Error: flex is not installed. Install it with 'brew install flex' on macOS."; exit 1; }
+command -v gcc >/dev/null 2>&1 || { echo "Error: gcc is not installed. Install it with 'xcode-select --install' on macOS."; exit 1; }
+
+# Check for input file
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <input.peb>"
+    exit 1
+fi
+
+INPUT_FILE="$1"
+
+# If the file doesn't exist in the current directory, check the examples directory
+if [ ! -f "$INPUT_FILE" ]; then
+    if [ -f "$EXAMPLES_DIR/$INPUT_FILE" ]; then
+        INPUT_FILE="$EXAMPLES_DIR/$INPUT_FILE"
+    else
+        echo "Error: Input file '$INPUT_FILE' does not exist."
+        exit 1
+    fi
+fi
+
+# Build the compiler using Makefile
+make -s || { echo "Error: Failed to build pebblec compiler."; exit 1; }
+
+# Create build directory if it doesn't exist
+mkdir -p "$BUILD_DIR"
+
+# Run pebblec to generate output.c
+"$BIN_DIR/pebblec" "$INPUT_FILE" > "$BUILD_DIR/output.c"
+if [ $? -ne 0 ]; then
+    echo "Error: pebblec failed to process '$INPUT_FILE'."
+    exit 1
+fi
+
+# Compile output.c with the built-in functions
+gcc "$BUILD_DIR/output.c" "$SRC_DIR/builtins/pebble_builtins.c" -o "$BUILD_DIR/program"
+if [ $? -ne 0 ]; then
+    echo "Error: Failed to compile output.c."
+    exit 1
+fi
+
+# Run the program and display output
+"$BUILD_DIR/program"
+if [ $? -ne 0 ]; then
+    echo "Error: Program execution failed."
+    exit 1
+fi

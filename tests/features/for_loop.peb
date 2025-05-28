@@ -1,0 +1,29 @@
+// Test: For loop
+// This test demonstrates the for loop functionality
+
+// Basic for loop
+display("Basic for loop:")
+for (var i = 0; i < 5; i = i + 1) {
+    display(i)
+}
+
+// For loop with different increment
+display("For loop with increment by 2:")
+for (var j = 0; j < 10; j = j + 2) {
+    display(j)
+}
+
+// For loop with decrement
+display("For loop with decrement:")
+for (var k = 5; k > 0; k = k - 1) {
+    display(k)
+}
+
+// Nested for loops
+display("Nested for loops:")
+for (var a = 1; a <= 3; a = a + 1) {
+    for (var b = 1; b <= 3; b = b + 1) {
+        var product = a * b
+        display("a=" + a + ", b=" + b + ", product=" + product)
+    }
+}

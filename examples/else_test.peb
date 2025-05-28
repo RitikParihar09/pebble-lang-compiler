@@ -1,0 +1,16 @@
+// Test for else on same line
+var a = 1
+var b = 5
+if(a greater b){
+    display("bada hai bada hai");
+}else{
+    display("Chota hai");
+}
+
+// Test for else on new line
+if(a greater b){
+    display("bada hai bada hai");
+}
+else{
+    display("Chota hai");
+}

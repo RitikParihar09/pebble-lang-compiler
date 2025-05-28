@@ -1,0 +1,4 @@
+// Test: Invalid comparison (= instead of ==)
+if (5 = 5) {
+    display("Equal")
+}
