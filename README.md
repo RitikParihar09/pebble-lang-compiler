@@ -18,7 +18,7 @@ A custom compiler for the **Pebble Programming Language**, built using **Flex** 
 
 ## 📁 Project Structure
 
-\`\`\`
+
 Pebble/
 ├── compiler/           # Contains Flex and Bison source files
 │   ├── pebble.l        # Lexer rules (Flex)
@@ -28,7 +28,6 @@ Pebble/
 ├── output/             # Generated C files and executables
 ├── run.sh              # Script to compile and run Pebble code
 └── README.md           # Project documentation
-\`\`\`
 
 ## ⚙️ How to Use
 
